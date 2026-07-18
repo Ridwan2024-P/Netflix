@@ -69,7 +69,7 @@ select {
     min-height: 100vh;
     
 }
-.nav-a,.accordion {
+.nav-a,.accordion,.reasons.projects {
     padding: 0px 148px;
     margin:0px 0px 140px;
 }
@@ -189,6 +189,108 @@ input[type="email"]{
         rgba(8,15,40,.9) 45%,
         #000 100%
     );
+}
+
+
+/* Card */
+.movie-card{
+    position: relative;
+    width:180px;
+    height:252px;
+    overflow: visible;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.movie-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:6px;
+    transition: transform .35s ease;
+}
+
+.movie-number{
+    position:absolute;
+    left:-30px;
+    bottom:10px;
+    font-size:100px;
+    font-weight:900;
+    color:#000;
+    -webkit-text-stroke:3px #fff;
+    line-height:1;
+    z-index:10;
+    pointer-events:none;
+    transition: transform .35s ease;
+}
+
+/* Hover Effect */
+.movie-card:hover{
+    transform: scale(1.06);
+}
+
+.movie-card:hover img{
+    transform: scale(1.03);
+}
+
+.movie-card:hover .movie-number{
+    transform: scale(1.08);
+}
+.splide__arrow--prev{
+    display: none !important;
+}
+.splide__list{
+    padding-left: 24px !important;
+}
+
+/* Rreason */
+
+.reason-card{
+    height:280px;
+    border-radius:20px;
+    padding:24px;
+    position:relative;
+  
+    background:linear-gradient(180deg,#1d2147 0%,#221423 100%);
+}
+
+.reason-card h3{
+    color:var(--text-color);
+    font-size:24px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.reason-card p{
+    color:var(--text-secondary);
+    font-size:16px;
+    font-weight: 400;
+    line-height:normal;
+}
+
+.reason-card .icon{
+    position:absolute;
+    right:25px;
+    bottom:25px;
+}
+
+.reason-card .icon img{
+    width:70px;
+}
+
+@media(max-width:992px){
+
+    .reason-card{
+        height:auto;
+        min-height:300px;
+    }
+
+    .reason-card h3{
+        font-size:1.6rem;
+    }
+
+    .reason-card p{
+        font-size:1rem;
+    }
 }
 /* Frequently ask Question */
 .accordion{
