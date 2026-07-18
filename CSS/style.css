@@ -59,6 +59,52 @@ select {
     border: 1px solid var(--border-color);
 }
 
+/* Hero */
+.Hero{
+    background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("../img/BD-en-20260713-TRIFECTA-perspective_99f62634-0e4e-45d0-85dc-1d56f6ad9666_large.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+.nav-a{
+    padding: 0px 148px;
+    margin:0px 0px 140px;
+}
+.content{
+    margin: 0px 0px 0px 16px;
+    height: 80px;;
+}
+.Hero img{
+    width: 148px;
+    height: 40px; 
+     object-fit: contain;
+}
+.Sign {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 76.9px;
+    padding: 4px 16px;
+}
+.Sign:hover,
+.Sign:focus,
+.Sign:active{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.Sign:hover{
+    background-color: var(--hover-color);
+}
+
 
 
 @media (max-width: 992px) {
