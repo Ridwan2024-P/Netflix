@@ -68,7 +68,7 @@ select {
     min-height: 100vh;
     
 }
-.nav-a{
+.nav-a,.accordion {
     padding: 0px 148px;
     margin:0px 0px 140px;
 }
@@ -167,14 +167,139 @@ input[type="email"]{
 .btn-get:hover{
     background-color: var(--hover-color);
 }
+.Hero::after{
+    content: "";
+    position: absolute;
+    left: -15%;
+    bottom: -70px;
+    width: 130%;
+    height: 140px;
+
+    border-top: 4px solid #e50914;
+    border-radius: 50% 50% 0 0;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(18, 52, 120, 0.7) 0%,
+        rgba(8, 15, 40, 0.9) 45%,
+        #000 100%
+    );
+
+    box-shadow: 0 -15px 40px rgba(229, 9, 20, 0.35);
+}
+/* Frequently ask Question */
+.accordion-item{
+    margin-bottom: 20px;
+    
+}
+.accordion-button::after{
+    background-image: none !important;
+    content: "+";
+    display: inline-block !important;
+    font-size: 50px !important;
+    font-weight: 300;
+    line-height: 1;
+    width: 50px !important;
+    height: 50px !important;
+    color: #fff;
+    transform: none !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    content: "×";
+}
+.accordion-button{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+    padding: 24px;
+    
+}
+.accordion,
+.accordion-item,
+.accordion-button{
+    border: none !important;
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border-color: transparent;
+}
+.accordion-body{
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 24px;
+}
 
 
 @media (max-width: 992px) {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
+    .nav-a,.accordion{
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+
+    .content{
+        height: 60px;
+        margin: 0;
+    }
+
+    .Hero img{
+        width: 90px;
+        height: auto;
+    }
+
+    .Hero-content{
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .Hero-content h1{
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .Hero-content p{
+        font-size: 18px;
+    }
+
+    .Hero-content h3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    form{
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    input[type="email"]{
+        width: 100%;
+    }
+
+    .btn-get{
+        width: 100%;
+        height: 56px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 576px) {
