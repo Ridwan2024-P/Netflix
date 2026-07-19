@@ -434,7 +434,7 @@ input[type="email"]{
 
 @media (max-width: 768px){
 
-    .nav-a,.accordion{
+    .nav-a,.accordion,.reasons,#projects {
         padding: 20px;
         margin-bottom: 60px;
     }
