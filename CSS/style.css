@@ -69,7 +69,7 @@ select {
     min-height: 100vh;
     
 }
-.nav-a,.accordion,.reasons.projects {
+.nav-a,.accordion,.reasons,#projects {
     padding: 0px 148px;
     margin:0px 0px 140px;
 }
