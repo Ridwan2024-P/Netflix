@@ -1,7 +1,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     new Splide('#project-slider', {
-      perPage     : 6,
-     
+      perPage     : 4.5,
+      gap:'20px', 
+        perMove: 1,
       autoplay    : true,  
         pagination: false,      
       interval    : 3000,        
